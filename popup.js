@@ -24,7 +24,19 @@ function cari() {
 
     const redLabels = ['n', 'v', 'a', 'adj', 'adv', 'num', 'pron', 'p', 'i'];
     const greenLabels = ['ki', 'ark', 'cak', 'kl', 'hor', 'huk', 'bio', 'psi', 'mat', 'kim', 'far'];
-    const blacklist = ["anda baru saja", "etimologi hanya", "© 2016"];
+    
+    // BUG FIX: Daftar blacklist diperbarui agar teks promosi akun KBBI disaring
+    const blacklist = [
+        "anda baru saja", 
+        "akun yang terdaftar", 
+        "etimologi hanya", 
+        "memudahkan pencarian", 
+        "© 2016", 
+        "tesaurus",
+        "hak berpartisipasi",
+        "menampilkan hasil pencarian"
+    ];
+    
     let out = "";
 
     main.querySelectorAll('h2').forEach(h => {
@@ -36,7 +48,8 @@ function cari() {
       let sib = h.nextElementSibling;
       while(sib && sib.tagName !== 'H2') {
         if (blacklist.some(b => sib.innerText.toLowerCase().includes(b))) {
-            sib = sib.nextElementSibling; continue;
+            sib = sib.nextElementSibling; 
+            continue;
         }
         
         let temp = sib.cloneNode(true);
