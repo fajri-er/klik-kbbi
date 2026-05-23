@@ -1,0 +1,55 @@
+/* =========================================
+   CSS KHUSUS UNTUK TOOLTIP MELAYANG (content.css)
+   ========================================= */
+
+#kbbi-ext-tooltip {
+  all: initial;
+  position: absolute;
+  z-index: 2147483647;
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.3) !important;
+  padding: 18px !important;
+  width: 320px !important;
+  max-height: 480px !important;
+  overflow-y: auto !important;
+  border: 1px solid #e2e8f0 !important;
+  font-family: 'Segoe UI', Tahoma, sans-serif !important;
+  display: block !important;
+  line-height: 1.6 !important;
+  color: #2d3748 !important;
+}
+
+.kbbi-ext-header {
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  color: #1a202c !important;
+  display: block !important;
+  margin-bottom: 8px !important;
+}
+
+.kbbi-sup {
+  font-size: 14px !important;
+  vertical-align: super !important;
+  color: #3498db !important;
+  margin-left: 2px !important;
+}
+
+.kbbi-ext-item {
+  display: block !important;
+  margin-bottom: 12px !important;
+  font-size: 14px !important;
+}
+
+.kbbi-red { color: #d9534f !important; font-weight: bold !important; font-style: italic !important; margin-right: 4px !important; }
+.kbbi-green { color: #27ae60 !important; font-weight: bold !important; font-style: italic !important; margin-right: 4px !important; }
+.kbbi-grey { color: #718096 !important; font-style: italic !important; }
+
+#kbbi-ext-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #a0aec0;
+}
