@@ -1,8 +1,6 @@
 # Klik KBBI - Kamus Instan (Chromium Extension)
 
-Ekstensi peramban berbasis Chromium (Manifest V3) yang dirancang untuk mencari definisi kata secara instan langsung dari situs resmi KBBI Kemendikdasmen tanpa harus membuka tab baru. Proyek ini dibangun dengan metode *Live Web Scraping/Parsing* dan dikembangkan melalui pendekatan *Vibe Coding* berkolaborasi dengan AI.
-
-Proyek ini diajukan sebagai karya dalam kompetisi **JuaraVibeCoding**.
+Ekstensi peramban berbasis Chromium (Manifest V3) yang dirancang untuk mencari definisi kata secara instan langsung dari situs resmi KBBI Kemendikdasmen tanpa harus membuka tab baru. Proyek ini dibangun dengan metode *Live Web Scraping/Parsing*
 
 ---
 
